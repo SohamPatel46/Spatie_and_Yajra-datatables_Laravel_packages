@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Yajra\DataTables\DataTables;
 use app\Models\User;
 
 class HomeController extends Controller
@@ -24,7 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user = User::all();
-        return view('home')->with(['data'=>$user]);
+        //$user = User::all();
+        return view('home');
+    }
+
+    public function getUsers()
+    {
+        return Datatables::of(User::query())->make(true);
     }
 }

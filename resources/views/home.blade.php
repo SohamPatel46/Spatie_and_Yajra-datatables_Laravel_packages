@@ -3,14 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    {{ $data }}
-                </div>
-            </div>
+        <div class="col-md-12">               
+                <table class="table border" id="myTable">
+                    <thead>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Created At</th>
+                        <th>Updated At</th>
+                    </thead>
+                </table>            
         </div>
     </div>
 </div>

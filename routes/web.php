@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//route for axaj to take data (api)
+Route::get('users', [App\Http\Controllers\HomeController::class, 'getUsers'])->name('get.users');
