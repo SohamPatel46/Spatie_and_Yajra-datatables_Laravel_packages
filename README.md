@@ -6,3 +6,6 @@
   		  Spatie\Permission\PermissionServiceProvider::class, ];
 3) php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
 4) php artisan migrate
+
+
+##
